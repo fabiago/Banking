@@ -1,7 +1,7 @@
 #ifndef SAVINGSACCOUNT_H
 #define SAVINGSACCOUNT_H
 
-#include "account.h";
+#include "account.h"
 
 class SavingsAccount: public Account{
 protected:
@@ -16,8 +16,8 @@ public:
         double bal, 
         const std::string& type);
 
-    // virtual destructor
-    virtual ~SavingsAccount();
+    // destructor
+    ~SavingsAccount();
 
     // getter and setter
     double getOverdraftLimit() const;
@@ -29,4 +29,4 @@ public:
     void display() const override;
 };
 
-#endif;
+#endif; // SAVINGSACCOUNT_H

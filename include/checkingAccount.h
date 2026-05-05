@@ -1,7 +1,7 @@
 #ifndef CHECKINGACCOUNT_H
 #define CHECKINGACCOUNT_H
 
-#include "account.h";
+#include "account.h"
 
 class CheckingAccount: public Account{
 private:
