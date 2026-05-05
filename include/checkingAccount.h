@@ -24,6 +24,7 @@ public:
     void setOverdraftLimit(double limit);
 
     // ovr virtual functions
+    void deposit(double amount) override;
     void withdraw(double amount) override;
     void display() const override;
 };
