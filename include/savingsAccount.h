@@ -5,7 +5,7 @@
 
 class SavingsAccount: public Account{
 protected:
-    double overdraftLimit;
+    double interest;
 
 public:
     
@@ -20,8 +20,8 @@ public:
     ~SavingsAccount();
 
     // getter and setter
-    double getOverdraftLimit() const;
-    void setOverdraftLimit(double limit);
+    double getInterest() const;
+    void setInterest(double limit);
 
     // ovr virtual functions
     void deposit(double amount) override;
