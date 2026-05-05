@@ -21,7 +21,7 @@ public:
         const std::string& type);
 
     // vitual destructor
-    virtual ~Account();
+    virtual ~Account(); // since Account() has virtual functins, the destructor must be virtual as well
 
     // getter functions
     int getAccountNumer() const;

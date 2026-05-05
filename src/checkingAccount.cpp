@@ -1,2 +1,4 @@
-#include "account.h";
 #include "checkingAccount.h"
+#include <iostream>
+
+CheckingAccount::CheckingAccount(){};
