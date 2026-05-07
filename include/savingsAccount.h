@@ -5,12 +5,11 @@
 
 class SavingsAccount: public Account{
 protected:
-    double interest;
+    int interest;
 
 public:
     
     // constructor
-    SavingsAccount();
     SavingsAccount(int accNum, 
         const std::string& name, 
         double bal, 

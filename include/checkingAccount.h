@@ -10,7 +10,6 @@ private:
 public:
     
     // constructors
-    CheckingAccount();
     CheckingAccount(int accNum, 
         const std::string& name, 
         double bal, 

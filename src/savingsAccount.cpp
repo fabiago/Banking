@@ -1,13 +1,23 @@
 #include "savingsAccount.h"
 
-SavingsAccount::SavingsAccount() {};
-SavingsAccount::~SavingsAccount() {};
+SavingsAccount::SavingsAccount(int accNum,
+    const std::string& name,
+    double bal,
+    int interest)
+    : Account(accNum, name, bal, "Savings"), interest(interest) {}
+
+SavingsAccount::~SavingsAccount() {}
 
 // getter and setter
-double getInterest() {return 0;};
-void setInterest(double limit) {};
+double SavingsAccount::getInterest() const {
+    return interest;
+}
+
+void SavingsAccount::setInterest(double limit) {
+    interest = limit;
+}
 
 // ovr virtual functions
-void deposit(double amount) {};
-void withdraw(double amount) {};
-void display() {};
+void SavingsAccount::deposit(double amount) {}
+void SavingsAccount::withdraw(double amount) {}
+void SavingsAccount::display() const {}
