@@ -19,6 +19,7 @@ public:
     // destructor
     ~CheckingAccount();
 
+    // TODO these could be inlined
     // getter and setter
     double getOverdraftLimit() const;
     void setOverdraftLimit(double limit);
