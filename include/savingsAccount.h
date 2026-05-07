@@ -14,7 +14,7 @@ public:
     SavingsAccount(int accNum, 
         const std::string& name, 
         double bal, 
-        const std::string& type);
+        int interest);
 
     // destructor
     ~SavingsAccount();
@@ -29,4 +29,4 @@ public:
     void display() const override;
 };
 
-#endif; // SAVINGSACCOUNT_H
+#endif // SAVINGSACCOUNT_H

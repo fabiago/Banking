@@ -12,20 +12,29 @@ class Bank{
 private:
 
     // private memeber functions
-    void createAccount();
-    void deleteAccount();
-    void findAccount();
+    void createCheckingAccount(int accNum, 
+        const std::string& name, 
+        double bal, 
+        double overdraft);
     
+    void createSavingsAccount(int accNum, 
+        const std::string& name, 
+        double bal, 
+        int interest);
     
+    void deleteAccount(int accNum, std::string& name);
 
-    void transferFunds();
+    void findAccount(int accNum, std::string& name);
+
+    void transferFunds(int accNum, std::string& name, double bal);
+
+    // private member variables
+    int m_nextAccountNumber = 0;
+    std::map<int, std::unique_ptr<Account>> m_accounts;
 
 public:
     Bank();
     ~Bank();
-
-    // public member vars
-    std::map<int, Account*> allAccounts;
 };
 
-#endif;
+#endif
