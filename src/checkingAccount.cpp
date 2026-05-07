@@ -5,7 +5,7 @@ CheckingAccount::CheckingAccount(){};
 CheckingAccount::~CheckingAccount(){};
 
 // getter and setter
-double getOverdraftLimit() {};
+double getOverdraftLimit() {return 0;};
 void setOverdraftLimit(double limit) {};
 
  // ovr virtual functions

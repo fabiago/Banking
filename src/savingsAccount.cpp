@@ -4,7 +4,7 @@ SavingsAccount::SavingsAccount() {};
 SavingsAccount::~SavingsAccount() {};
 
 // getter and setter
-double getInterest() {};
+double getInterest() {return 0;};
 void setInterest(double limit) {};
 
 // ovr virtual functions

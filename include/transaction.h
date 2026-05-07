@@ -11,4 +11,4 @@ public:
     ~Transaction();
 };
 
-#endif;
+#endif
