@@ -18,6 +18,16 @@ void SavingsAccount::setInterest(double limit) {
 }
 
 // ovr virtual functions
-void SavingsAccount::deposit(double amount) {}
-void SavingsAccount::withdraw(double amount) {}
-void SavingsAccount::display() const {}
+void SavingsAccount::deposit(double amount) {
+    Account::deposit(amount);
+    // perhaps add interest calculation, but for now simple
+}
+
+void SavingsAccount::withdraw(double amount) {
+    Account::withdraw(amount);
+}
+
+void SavingsAccount::display() const {
+    Account::display();
+    std::cout << "Interest Rate: " << interest << "%" << std::endl;
+}

@@ -18,6 +18,19 @@ void CheckingAccount::setOverdraftLimit(double limit) {
 };
 
  // ovr virtual functions
-void deposit(double amount) {};
-void withdraw(double amount) {};
-void display() {};
+void CheckingAccount::deposit(double amount) {
+    Account::deposit(amount);
+}
+
+void CheckingAccount::withdraw(double amount) {
+    if (balance - amount >= -overdraftLimit) {
+        Account::withdraw(amount);
+    } else {
+        std::cout << "Overdraft limit exceeded." << std::endl;
+    }
+}
+
+void CheckingAccount::display() const {
+    Account::display();
+    std::cout << "Overdraft Limit: " << overdraftLimit << std::endl;
+}

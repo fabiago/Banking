@@ -34,9 +34,9 @@ public:
     void setBalance(double bal);
 
     // virtual functions
-    virtual void deposit(double amount) = 0;
-    virtual void withdraw(double amount) = 0;
-    virtual void display() const = 0;
+    virtual void deposit(double amount);
+    virtual void withdraw(double amount);
+    virtual void display() const;
 };
 
 #endif // ACCOUNT_H
